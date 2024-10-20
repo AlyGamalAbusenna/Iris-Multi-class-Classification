@@ -1,8 +1,6 @@
 # Iris-Multi-class-Classification
 Multi-class Classification using PyTorch on Iris Dataset
 
-# Deep2 Keras Model Training
-
 ## Objective
 The objective of this project is to develop a deep learning model using Keras to address a specific problem utilizing the provided dataset. This project also showcases how to visualize the model's training process using TensorBoard, evaluate its performance using ROC-AUC curves, and analyze both training and validation losses to gain insights into the model's learning behavior.
 
