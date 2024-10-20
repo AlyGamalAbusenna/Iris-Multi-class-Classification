@@ -1,78 +1,81 @@
 # Iris-Multi-class-Classification
 Multi-class Classification using PyTorch on Iris Dataset
 
- -> Objective
-The goal of this project is to build a multi-class classification model using PyTorch to classify different species of Iris flowers based on four features: sepal length, sepal width, petal length, and petal width. The species are one of three classes:
+# Deep2 Keras Model Training
 
-1.Iris-setosa
-2.Iris-versicolor
-3.Iris-virginica
-The model is trained using a neural network to accurately classify these species, aiming for an accuracy above 95%.
+## Objective
+The objective of this project is to develop a deep learning model using Keras to address a specific problem utilizing the provided dataset. This project also showcases how to visualize the model's training process using TensorBoard, evaluate its performance using ROC-AUC curves, and analyze both training and validation losses to gain insights into the model's learning behavior.
 
-->Dataset Description
-The dataset used in this project is the famous Iris dataset. The dataset contains 150 samples, each with:
+## Dataset Description
+The dataset used in this project is focused on [insert type of data here, e.g., image classification, sentiment analysis, etc.]. The dataset is divided into training and validation subsets to facilitate model training and to evaluate its performance. It is important to provide detailed information about the dataset, including its source and format, to help users understand its structure and purpose.
 
-4 features: sepal length, sepal width, petal length, and petal width.
-1 target variable: species of the Iris flower, which can be one of three categories (Iris-setosa, Iris-versicolor, Iris-virginica).
-In this project, the dataset was provided as a CSV file.
+## Steps to Run the Code in Jupyter
+1. **Clone the Repository**: First, clone the GitHub repository to your local machine:
+   ```bash
+   git clone <repository_link>
+   cd <repository_name>
+   ```
 
-Dataset Columns:
-1.Sepal Length: Continuous feature
-2.Sepal Width: Continuous feature
-3.Petal Length: Continuous feature
-4.Petal Width: Continuous feature
-Species: Target variable with three classes (Setosa, Versicolor, Virginica)
+2. **Open Jupyter Notebook**: Launch Jupyter Notebook to open the project notebook (`Deep2_keras.ipynb`):
+   ```bash
+   jupyter notebook
+   ```
 
-->Steps to Run the Code in Jupyter (Google Colab)
-To run the project in Jupyter Notebook or Google Colab, follow these steps:
+3. **Install Dependencies**: Ensure all necessary dependencies are installed by running the following command in a terminal:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1.Upload the Dataset: Upload the provided CSV dataset (iris.csv) to your Google Colab environment.
+4. **Run the Notebook**: Open the Jupyter Notebook file (`Deep2_keras.ipynb`) and execute the cells sequentially:
+   - The notebook includes code for loading the dataset, preprocessing, model training, and performance evaluation.
+   - Execute each cell step-by-step, following the logical flow from data loading to model training.
 
-1.Install Required Dependencies: Before running the code, ensure you have all the dependencies installed. You can do this by running the following command in your notebook:
+## Dependencies and Installation Instructions
+- **Python 3.7+**: Ensure you are using Python version 3.7 or higher.
+- **TensorFlow**: Required for deep learning model training and evaluation. Install TensorFlow using the following command:
+  ```bash
+  pip install tensorflow
+  ```
+- **Keras**: The model is built using the Keras API, which is included with TensorFlow.
+- **Matplotlib**: Required for visualizing ROC-AUC curves and other plots:
+  ```bash
+  pip install matplotlib
+  ```
+- **Scikit-Learn**: Used for calculating the ROC-AUC score and other evaluation metrics:
+  ```bash
+  pip install scikit-learn
+  ```
+- **Pandas**: Used for loading and handling the dataset:
+  ```bash
+  pip install pandas
+  ```
+- **Jupyter Notebook**: Required to run the code interactively:
+  ```bash
+  pip install notebook
+  ```
+- **TensorBoard**: For visualizing training logs and monitoring the model's learning progress:
+  ```bash
+  pip install tensorboard
+  ```
 
-!pip install torch scikit-learn pandas matplotlib seaborn
+## Visualizations and Performance Evaluation
 
-2.Load the Dataset: In the notebook, load the uploaded CSV file using pandas. The dataset is then split into features (X) and target (y).
+### TensorBoard Visualizations
+- **Training and Validation Loss**: During the model training process, the loss for both training and validation datasets is recorded and can be visualized using TensorBoard. To start TensorBoard and view these graphs, run the following command in the terminal:
+  ```bash
+  tensorboard --logdir=logs/fit
+  ```
+- **Histograms and Metrics**: TensorBoard also provides histograms and metric visualizations that are useful in understanding model performance during training.
 
-3.Build and Train the Model: Follow the step-by-step cells in the notebook, which include:
+### ROC-AUC Curves
+- After training, the model's performance is evaluated using the ROC-AUC metric, which is commonly used for evaluating classification models. The ROC curve provides insights into the model's ability to distinguish between classes, while the AUC score summarizes the overall performance.
+- The ROC-AUC curve is plotted using Matplotlib, and this plot can be found in the notebook under the performance evaluation section.
 
-Loading the dataset
-Preprocessing and normalization
-Defining the neural network model
-Training the model on the training set
-Evaluating the model using the test set
-Visualizing the training process (loss, confusion matrix, ROC-AUC)
-Evaluate the Model: After training, the notebook evaluates the model using:
+## Notes
+- Update the paths to the dataset or other relevant files as per your local setup.
+- The TensorBoard logs are saved in the `logs/fit` directory. You may modify this path as per your requirements.
 
-Accuracy
-Confusion Matrix
-Precision, Recall, F1-Score
-ROC-AUC curve (One-vs-Rest approach for multi-class)
-Visualization: The notebook provides visualizations of the loss during training and ROC curves for each class.
-
-->Dependencies
-Ensure you have the following dependencies installed in your environment:
-
--Python 3.7+
--PyTorch: Install PyTorch using the official installation guide from PyTorch.
-
-pip install torch torchvision torchaudio
-
--scikit-learn: For dataset splitting, scaling, and evaluation metrics.
-
-pip install scikit-learn
-
--pandas: For loading and handling the dataset.
-
-pip install pandas
-
--matplotlib: For plotting loss curves and visualizing ROC curves.
-
-pip install matplotlib
-
--seaborn: For creating confusion matrix heatmaps.
-
-pip install seaborn
+Feel free to explore the notebook, modify the hyperparameters, and observe how these changes affect the model's performance!
 
 
 # Important plots 
