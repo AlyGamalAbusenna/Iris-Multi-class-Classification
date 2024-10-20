@@ -78,3 +78,8 @@ pip install seaborn
 # Important plots 
 ![image](https://github.com/user-attachments/assets/82c35d07-6686-4778-8791-edefafe53981)
 
+(Scatter plot) 
+
+![image](https://github.com/user-attachments/assets/bc034ddb-0a09-4f76-b124-6be86799bc0a)
+
+(ROC curve)
