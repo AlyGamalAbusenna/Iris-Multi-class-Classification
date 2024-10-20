@@ -1,7 +1,7 @@
 # Iris-Multi-class-Classification
 Multi-class Classification using PyTorch on Iris Dataset
 
--> Objective
+## -> Objective
 The goal of this project is to build a multi-class classification model using PyTorch to classify different species of Iris flowers based on four features: sepal length, sepal width, petal length, and petal width. The species are one of three classes:
 
 1.Iris-setosa
